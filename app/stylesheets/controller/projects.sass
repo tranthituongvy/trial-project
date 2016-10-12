@@ -1,0 +1,365 @@
+.projects
+	.weather-content
+		.wea-title
+			background-color: $color-background-3
+			font-size: 16px
+			padding: 6px 0
+			
+			
+			&.is-small
+				font-size: 12px
+				line-height: 13px
+				
+				
+			&.is-spec
+				background-color: $color-twitter	
+			
+			
+		.wea-content
+		
+		
+		.wea-item
+			margin-bottom: 1px
+			
+			&:last-of-type
+				margin-bottom: 0
+				
+				
+			.l-container
+				background-color: rgba($color-background, 0.7)	
+				margin: 0 18px
+				padding: 21px 0
+		
+		
+			&.cloudy
+				background: url(../img/bg_cloudy.png) no-repeat	left center
+				
+				
+				.item-head
+					.item-img
+						margin-top: -18px
+				
+				
+			&.sunny	
+				background: url(../img/bg_sunny.png) no-repeat	left center
+				
+				
+				.item-head
+					.item-img
+						margin-top: -25px
+				
+				
+			&.rainny	
+				background: url(../img/bg_rainny.png) no-repeat	left center	
+				
+				
+				.item-head
+					.item-img
+						margin-top: -25px
+					
+				
+		.item-head
+			padding: 14px 80px 0 65px
+			margin: 0 10px
+			position: relative
+			min-height: 68px
+			
+			
+			.item-img
+				position: absolute	
+				top: 50%
+				left: 0	
+			
+			
+			.item-deg	
+				+border-radius(100%)
+				position: absolute
+				right: 0
+				top: 50%
+				height: 68px
+				width: 68px
+				margin-top: -34px
+				border: 7px solid $color-gray 
+				text-align: center
+				padding: 5px
+				
+				
+				.deg-title,
+				.deg-num
+					display: block
+					
+					
+				.deg-title
+					font-size: 12px
+					line-height: 14px
+					
+					
+				.deg-num
+					font-size: 24px	
+					line-height: 26px
+					margin-top: 3px
+					
+					
+					.unit
+						font-size: 16px
+						
+				.deg-status
+					position: absolute
+					top: -7px
+					left: -7px
+					background-repeat: no-repeat
+					width: 68px
+					height: 68px
+					
+					
+					&.deg-72	
+						background-image: url(../img/deg_72.png)	
+						
+						
+					&.deg-45
+						background-image: url(../img/deg_45.png)
+						height: 69px
+						
+						
+					&.deg-21
+						background-image: url(../img/deg_21.png)
+						height: 69px
+				
+				
+		.item-title
+			display: block
+			font-size: 16px
+			line-height: 18px
+			max-height: 18px
+			overflow: hidden
+			
+		.item-info
+			+clearfix()
+			margin-top: 5px
+			line-height: 16px
+			
+		
+			.info-left
+				float: left
+				width: 50%
+				
+				
+				.info
+					font-size: 16px
+		
+		
+			.info-right
+				float: right
+				width: 50%
+				text-align: right		
+				
+				
+		.item-content
+			padding: 0 35px
+			margin-top: 10px
+			
+			
+		.list-users
+			.each-users
+				+clearfix()
+				padding: 10px 0
+				border-bottom: 2px solid rgba($color-text, 0.5)
+				
+				
+				&:last-of-type
+					border-bottom: none
+				
+				
+				.avatar
+					float: left
+					margin: 2px 15px 0 0
+					width: 60px
+					
+					
+					img
+						+border-radius(100%)
+						width: 60px
+						height: 60px	
+						display: block	
+						
+						
+				.entry
+					overflow: hidden	
+					
+					
+				.u-name
+					display: block
+					font-size: 16px
+					
+					
+	.wea-users
+		color: $color-background-3	
+			
+			
+		.list-users
+			.each-users	
+				border-color: rgba($color-background-3	,0.5)						
+	
+	
+	&-index 
+		
+		
+	&-new
+	
+	
+	&-show
+		.sub-title
+			line-height: 28px
+			
+			
+			.st-title
+				+border-radius(14px)
+				background-color: $color-twitter
+				height: 28px
+				display: inline-block
+				padding: 0 15px		
+				font-size: 14px
+				color: $color-text
+				position: relative
+				margin-right: 16px
+				
+				
+				&:after
+					content: ''
+					width: 11px
+					height: 20px
+					background: url(../img/icon_arrow_fill.png)	 no-repeat
+					position: absolute
+					right: -6px
+					top: 50%
+					margin-top: -10px
+					
+					
+			.st-info
+				font-size: 14px  
+				
+				
+		.item-check
+			position: relative
+			padding-left: 24px
+			
+			
+			.item-icon
+				+border-radius(100%)
+				width: 42px
+				height: 42px	
+				border: 1px solid $color-twitter
+				text-align: center
+				padding-top: 8px	   
+				display: inline-block
+				vertical-align: top
+				margin-right: 12px
+				
+				
+			.item-txt
+				display: inline-block
+				vertical-align: top	
+				line-height: 42px
+				font-size: 14px
+				
+				
+		.list-items
+			.each-items
+				padding: 15px 0
+				
+				
+				.ei-content
+					margin-top: 15px
+					
+					
+				.f-row
+					padding-bottom: 15px
+					
+					
+					.f-textarea
+						border-color: $color-twitter
+						height: 58px	
+					
+					
+		.wea-pattern
+			color: $color-background-3		
+		
+	
+	&-finish
+		.list-users
+			margin-bottom: 15px
+			
+			
+		.finish-message
+			background-color: $color-background
+			text-align: center
+			font-size: 18px
+			line-height: 30px
+			padding: 18px	
+			
+			
+			.emphasize
+				font-size: 22px
+				
+				
+		.finish-notification
+			color: $color-background-3
+			text-align: center
+			padding: 20px 0 30px
+			font-size: 18px
+			
+			
+			.fn-title
+				display: block
+				margin-bottom: 22px
+				
+				
+			.fn-achieve
+				margin-bottom: 20px	
+				
+				
+			.main-btn	
+				display: block
+				width: 100%
+				
+				
+		.list-status
+			+clearfix
+			display: inline-block
+			margin-bottom: 20px
+			
+			
+			li
+				+border-radius(100%)
+				+box-shadow(0, 0, 4px, #303333)
+				float: left
+				margin: 0 25px
+				width: 121px
+				height: 121px		
+				border-width: 5px
+				border-style: solid
+				text-align: center
+				padding-top: 13px
+				
+				.status-text
+					display: block
+					margin-bottom: 3px
+				
+				
+				&.success
+					border-color: #ffd538
+					color: #ffd538
+					
+					
+				&.failure
+					border-color: #32cdfd
+					color: #32cdfd 		
+	
+	
+		
+      
+      
+          
+      
+          
+            

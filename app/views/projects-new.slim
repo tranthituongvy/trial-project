@@ -1,22 +1,9 @@
 doctype html
-html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"
-  head
-    title 
-			| Trial Project	
-    meta http-equiv="Content-Type" content="text/html;charset=UTF-8"
-    link rel="stylesheet" type="text/css" href="css/application.css" 	
-  body
-    .l-wraper
-			.l-header	
-				.l-container
-					a.l-back href='#'
-						i.fa.fa-chevron-left
-					a href='#' 
-						img src="img/logo.png"
-					a.l-notification href='#' 
-						i.fa.fa-bell
-						span.noti-num
-							| 3
+html
+	include _head
+	body.projects.projects-new
+		.l-wraper
+			include _header2
 			.l-content
 				.l-title
 					.l-container
@@ -47,13 +34,7 @@ html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"
 							button.main-btn
 								i.fa.fa-save
 								| 保存する					
-			.l-footer
-				.l-container
-					.l-share
-						a.share-facebook href="#"
-							i.fa.fa-facebook
-						a.share-twitter	
-							i.fa.fa-twitter
+			include _footer
                 
 					
 	 		

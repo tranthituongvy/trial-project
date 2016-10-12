@@ -518,66 +518,6 @@ table {
   width: 23px;
   height: 23px; }
 
-.new-form {
-  margin-top: 15px; }
-
-.f-note {
-  display: block;
-  line-height: 14px;
-  margin-bottom: 4px; }
-
-.f-label {
-  border-radius: 14px;
-  display: inline-block;
-  height: 28px;
-  line-height: 28px;
-  background-color: #28b4aa;
-  padding: 0 20px;
-  margin-bottom: 7px; }
-
-.f-textarea {
-  border-radius: 3px;
-  border: 1px solid #28b4aa;
-  resize: none;
-  display: block;
-  width: 100%;
-  padding: 10px 12px;
-  color: #303333;
-  height: 100px; }
-
-.f-text {
-  border-radius: 3px;
-  border: 1px solid #28b4aa;
-  resize: none;
-  display: block;
-  width: 100%;
-  height: 40px;
-  padding: 0 12px;
-  color: #303333; }
-
-.f-row {
-  padding-bottom: 20px; }
-
-.f-btn {
-  text-align: center; }
-  .f-btn.f-row {
-    padding-bottom: 35px; }
-
-.main-btn {
-  border-radius: 20px;
-  padding: 0 20px;
-  height: 40px;
-  border: 2px solid #28b4aa;
-  background: #fff;
-  color: #28b4aa;
-  font-size: 16px;
-  line-height: 38px; }
-  .main-btn:focus {
-    outline: none; }
-  .main-btn .fa {
-    vertical-align: top;
-    margin: 6px 10px 0 0; }
-
 .l-wraper {
   max-width: 414px;
   margin: 0 auto; }
@@ -650,53 +590,107 @@ table {
   min-height: 42px;
   padding: 11px 0; }
 
-.m-weather .wea-title {
+.main-form {
+  margin-top: 15px; }
+
+.f-note {
+  display: block;
+  line-height: 14px;
+  margin-bottom: 4px; }
+
+.f-label {
+  border-radius: 14px;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  background-color: #28b4aa;
+  padding: 0 20px;
+  margin-bottom: 7px; }
+
+.f-textarea {
+  border-radius: 3px;
+  border: 1px solid #28b4aa;
+  resize: none;
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  color: #303333;
+  height: 100px; }
+
+.f-text {
+  border-radius: 3px;
+  border: 1px solid #28b4aa;
+  resize: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  color: #303333; }
+
+.f-row {
+  padding-bottom: 20px; }
+
+.f-btn {
+  text-align: center; }
+  .f-btn.f-row {
+    padding-bottom: 35px; }
+
+.main-btn {
+  border-radius: 20px;
+  padding: 0 20px;
+  height: 40px;
+  border: 2px solid #28b4aa;
+  background: #fff;
+  color: #28b4aa;
+  font-size: 16px;
+  line-height: 38px; }
+  .main-btn:focus {
+    outline: none; }
+  .main-btn .fa {
+    vertical-align: top;
+    margin: 6px 10px 0 0; }
+
+.projects .weather-content .wea-title {
   background-color: #1c8079;
   font-size: 16px;
   padding: 6px 0; }
-  .m-weather .wea-title.is-small {
+  .projects .weather-content .wea-title.is-small {
     font-size: 12px;
     line-height: 13px; }
-  .m-weather .wea-title.is-spec {
+  .projects .weather-content .wea-title.is-spec {
     background-color: #28b4aa; }
 
-.m-weather .wea-item {
+.projects .weather-content .wea-item {
   margin-bottom: 1px; }
-  .m-weather .wea-item:last-of-type {
+  .projects .weather-content .wea-item:last-of-type {
     margin-bottom: 0; }
-  .m-weather .wea-item .l-container {
+  .projects .weather-content .wea-item .l-container {
     background-color: rgba(40, 180, 170, 0.7);
     margin: 0 18px;
     padding: 21px 0; }
-  .m-weather .wea-item.cloudy {
+  .projects .weather-content .wea-item.cloudy {
     background: url(../img/bg_cloudy.png) no-repeat left center; }
-    .m-weather .wea-item.cloudy .item-head .item-img {
+    .projects .weather-content .wea-item.cloudy .item-head .item-img {
       margin-top: -18px; }
-  .m-weather .wea-item.sunny {
+  .projects .weather-content .wea-item.sunny {
     background: url(../img/bg_sunny.png) no-repeat left center; }
-    .m-weather .wea-item.sunny .item-head .item-img {
+    .projects .weather-content .wea-item.sunny .item-head .item-img {
       margin-top: -25px; }
-  .m-weather .wea-item.rainny {
+  .projects .weather-content .wea-item.rainny {
     background: url(../img/bg_rainny.png) no-repeat left center; }
-    .m-weather .wea-item.rainny .item-head .item-img {
+    .projects .weather-content .wea-item.rainny .item-head .item-img {
       margin-top: -25px; }
-  .m-weather .wea-item.no-bg {
-    color: #1c8079; }
-    .m-weather .wea-item.no-bg .l-container {
-      background-color: #fff; }
-    .m-weather .wea-item.no-bg .list-users .each-users {
-      border-color: rgba(28, 128, 121, 0.5); }
 
-.m-weather .item-head {
+.projects .weather-content .item-head {
   padding: 14px 80px 0 65px;
   margin: 0 10px;
   position: relative;
   min-height: 68px; }
-  .m-weather .item-head .item-img {
+  .projects .weather-content .item-head .item-img {
     position: absolute;
     top: 50%;
     left: 0; }
-  .m-weather .item-head .item-deg {
+  .projects .weather-content .item-head .item-deg {
     border-radius: 100%;
     position: absolute;
     right: 0;
@@ -707,91 +701,96 @@ table {
     border: 7px solid #ced9d8;
     text-align: center;
     padding: 5px; }
-    .m-weather .item-head .item-deg .deg-title,
-    .m-weather .item-head .item-deg .deg-num {
+    .projects .weather-content .item-head .item-deg .deg-title,
+    .projects .weather-content .item-head .item-deg .deg-num {
       display: block; }
-    .m-weather .item-head .item-deg .deg-title {
+    .projects .weather-content .item-head .item-deg .deg-title {
       font-size: 12px;
       line-height: 14px; }
-    .m-weather .item-head .item-deg .deg-num {
+    .projects .weather-content .item-head .item-deg .deg-num {
       font-size: 24px;
       line-height: 26px;
       margin-top: 3px; }
-      .m-weather .item-head .item-deg .deg-num .unit {
+      .projects .weather-content .item-head .item-deg .deg-num .unit {
         font-size: 16px; }
-    .m-weather .item-head .item-deg .deg-status {
+    .projects .weather-content .item-head .item-deg .deg-status {
       position: absolute;
       top: -7px;
       left: -7px;
       background-repeat: no-repeat;
       width: 68px;
       height: 68px; }
-      .m-weather .item-head .item-deg .deg-status.deg-72 {
+      .projects .weather-content .item-head .item-deg .deg-status.deg-72 {
         background-image: url(../img/deg_72.png); }
-      .m-weather .item-head .item-deg .deg-status.deg-45 {
+      .projects .weather-content .item-head .item-deg .deg-status.deg-45 {
         background-image: url(../img/deg_45.png);
         height: 69px; }
-      .m-weather .item-head .item-deg .deg-status.deg-21 {
+      .projects .weather-content .item-head .item-deg .deg-status.deg-21 {
         background-image: url(../img/deg_21.png);
         height: 69px; }
 
-.m-weather .item-title {
+.projects .weather-content .item-title {
   display: block;
   font-size: 16px;
   line-height: 18px;
   max-height: 18px;
   overflow: hidden; }
 
-.m-weather .item-info {
+.projects .weather-content .item-info {
   margin-top: 5px;
   line-height: 16px; }
-  .m-weather .item-info:before, .m-weather .item-info:after {
+  .projects .weather-content .item-info:before, .projects .weather-content .item-info:after {
     content: "";
     display: table; }
-  .m-weather .item-info:after {
+  .projects .weather-content .item-info:after {
     clear: both; }
-  .m-weather .item-info .info-left {
+  .projects .weather-content .item-info .info-left {
     float: left;
     width: 50%; }
-    .m-weather .item-info .info-left .info {
+    .projects .weather-content .item-info .info-left .info {
       font-size: 16px; }
-  .m-weather .item-info .info-right {
+  .projects .weather-content .item-info .info-right {
     float: right;
     width: 50%;
     text-align: right; }
 
-.m-weather .item-content {
+.projects .weather-content .item-content {
   padding: 0 35px;
   margin-top: 10px; }
 
-.m-weather .list-users .each-users {
+.projects .weather-content .list-users .each-users {
   padding: 10px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
-  .m-weather .list-users .each-users:before, .m-weather .list-users .each-users:after {
+  .projects .weather-content .list-users .each-users:before, .projects .weather-content .list-users .each-users:after {
     content: "";
     display: table; }
-  .m-weather .list-users .each-users:after {
+  .projects .weather-content .list-users .each-users:after {
     clear: both; }
-  .m-weather .list-users .each-users:last-of-type {
+  .projects .weather-content .list-users .each-users:last-of-type {
     border-bottom: none; }
-  .m-weather .list-users .each-users .avatar {
+  .projects .weather-content .list-users .each-users .avatar {
     float: left;
     margin: 2px 15px 0 0;
     width: 60px; }
-    .m-weather .list-users .each-users .avatar img {
+    .projects .weather-content .list-users .each-users .avatar img {
       border-radius: 100%;
       width: 60px;
       height: 60px;
       display: block; }
-  .m-weather .list-users .each-users .entry {
+  .projects .weather-content .list-users .each-users .entry {
     overflow: hidden; }
-  .m-weather .list-users .each-users .u-name {
+  .projects .weather-content .list-users .each-users .u-name {
     display: block;
     font-size: 16px; }
 
-.sub-title {
+.projects .wea-users {
+  color: #1c8079; }
+  .projects .wea-users .list-users .each-users {
+    border-color: rgba(28, 128, 121, 0.5); }
+
+.projects-show .sub-title {
   line-height: 28px; }
-  .sub-title .st-title {
+  .projects-show .sub-title .st-title {
     border-radius: 14px;
     background-color: #28b4aa;
     height: 28px;
@@ -801,7 +800,7 @@ table {
     color: #fff;
     position: relative;
     margin-right: 16px; }
-    .sub-title .st-title:after {
+    .projects-show .sub-title .st-title:after {
       content: '';
       width: 11px;
       height: 20px;
@@ -810,14 +809,13 @@ table {
       right: -6px;
       top: 50%;
       margin-top: -10px; }
+  .projects-show .sub-title .st-info {
+    font-size: 14px; }
 
-.sub-title .st-info {
-  font-size: 14px; }
-
-.item-check {
+.projects-show .item-check {
   position: relative;
   padding-left: 24px; }
-  .item-check .item-icon {
+  .projects-show .item-check .item-icon {
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -827,21 +825,76 @@ table {
     display: inline-block;
     vertical-align: top;
     margin-right: 12px; }
-  .item-check .item-txt {
+  .projects-show .item-check .item-txt {
     display: inline-block;
     vertical-align: top;
     line-height: 42px;
     font-size: 14px; }
 
-.list-items .each-items {
+.projects-show .list-items .each-items {
   padding: 15px 0; }
-  .list-items .each-items .ei-content {
+  .projects-show .list-items .each-items .ei-content {
     margin-top: 15px; }
-  .list-items .each-items .f-row {
+  .projects-show .list-items .each-items .f-row {
     padding-bottom: 15px; }
-    .list-items .each-items .f-row .f-textarea {
+    .projects-show .list-items .each-items .f-row .f-textarea {
       border-color: #28b4aa;
       height: 58px; }
 
-.wea-pattern {
+.projects-show .wea-pattern {
   color: #1c8079; }
+
+.projects-finish .list-users {
+  margin-bottom: 15px; }
+
+.projects-finish .finish-message {
+  background-color: #28b4aa;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 18px; }
+  .projects-finish .finish-message .emphasize {
+    font-size: 22px; }
+
+.projects-finish .finish-notification {
+  color: #1c8079;
+  text-align: center;
+  padding: 20px 0 30px;
+  font-size: 18px; }
+  .projects-finish .finish-notification .fn-title {
+    display: block;
+    margin-bottom: 22px; }
+  .projects-finish .finish-notification .fn-achieve {
+    margin-bottom: 20px; }
+  .projects-finish .finish-notification .main-btn {
+    display: block;
+    width: 100%; }
+
+.projects-finish .list-status {
+  display: inline-block;
+  margin-bottom: 20px; }
+  .projects-finish .list-status:before, .projects-finish .list-status:after {
+    content: "";
+    display: table; }
+  .projects-finish .list-status:after {
+    clear: both; }
+  .projects-finish .list-status li {
+    border-radius: 100%;
+    box-shadow: 0 0 4px #303333;
+    float: left;
+    margin: 0 25px;
+    width: 121px;
+    height: 121px;
+    border-width: 5px;
+    border-style: solid;
+    text-align: center;
+    padding-top: 13px; }
+    .projects-finish .list-status li .status-text {
+      display: block;
+      margin-bottom: 3px; }
+    .projects-finish .list-status li.success {
+      border-color: #ffd538;
+      color: #ffd538; }
+    .projects-finish .list-status li.failure {
+      border-color: #32cdfd;
+      color: #32cdfd; }
