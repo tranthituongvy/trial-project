@@ -1426,3 +1426,6 @@ table {
   margin-top: 10px; }
   .supports-new .list-m-request .m-request:last-of-type {
     padding-bottom: 0; }
+
+.supports-show .list-m-request {
+  margin-bottom: 40px; }
