@@ -1,0 +1,137 @@
+.m-weather
+	.l-container
+		background-color: rgba($color-background, 0.7)	
+		margin: 0 18px
+		padding: 21px 0
+		
+		
+	.item-head
+		padding: 14px 80px 0 65px
+		margin: 0 10px
+		position: relative
+		min-height: 68px
+		
+		
+		.item-img
+			position: absolute	
+			top: 50%
+			left: 0	
+		
+		
+		.item-deg	
+			+border-radius(100%)
+			position: absolute
+			right: 0
+			top: 50%
+			height: 68px
+			width: 68px
+			margin-top: -34px
+			border: 7px solid $color-gray 
+			text-align: center
+			padding: 5px
+			
+			
+			.deg-title,
+			.deg-num
+				display: block
+				
+				
+			.deg-title
+				font-size: 12px
+				line-height: 14px
+				
+				
+			.deg-num
+				font-size: 24px	
+				line-height: 26px
+				margin-top: 3px
+				
+				
+				.unit
+					font-size: 16px
+					
+			.deg-status
+				position: absolute
+				top: -7px
+				left: -7px
+				background-repeat: no-repeat
+				width: 68px
+				height: 68px
+				
+				
+				&.deg-72	
+					background-image: url(../img/deg_72.png)	
+					
+					
+				&.deg-45
+					background-image: url(../img/deg_45.png)
+					height: 69px
+					
+					
+				&.deg-21
+					background-image: url(../img/deg_21.png)
+					height: 69px
+			
+			
+	.item-title
+		display: block
+		font-size: 16px
+		line-height: 18px
+		max-height: 18px
+		overflow: hidden
+		
+	.item-info
+		+clearfix()
+		margin-top: 5px
+		line-height: 16px
+		
+	
+		.info-left
+			float: left
+			width: 50%
+			
+			
+			.info
+				font-size: 16px
+	
+	
+		.info-right
+			float: right
+			width: 50%
+			text-align: right		
+			
+			
+	.item-content
+		padding: 0 35px
+		margin-top: 9px		
+	
+
+	&.cloudy
+		background: url(../img/bg_cloudy.png) no-repeat	left center
+		
+		
+		.item-head
+			.item-img
+				margin-top: -18px
+		
+		
+	&.sunny	
+		background: url(../img/bg_sunny.png) no-repeat	left center
+		
+		
+		.item-head
+			.item-img
+				margin-top: -25px
+		
+		
+	&.rainny	
+		background: url(../img/bg_rainny.png) no-repeat	left center	
+		
+		
+		.item-head
+			.item-img
+				margin-top: -25px
+				
+				
+				
+	

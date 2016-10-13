@@ -20,7 +20,8 @@ var slimpath = "";
 gulp.task('browser-sync', function(){
   browserSync({
     server: {
-      baseDir: './public/'
+      baseDir: './public/',
+      index: 'projects-index.html'
     },
     port: 8000
   });
@@ -93,11 +94,12 @@ gulp.task('bower', function() {
 });
 
 // default
-gulp.task('default', ['watch', 'slim', 'sass','imagemin'] );
+gulp.task('default', ['watch', 'bower', 'imagemin', 'slim', 'sass','browser-sync'] );
 
 // watch
 gulp.task('watch', function() {
   gulp.watch(['./app/views/*.slim', './app/views/partial/*.slim'],['slim']);
   gulp.watch(['./app/stylesheets/*.sass', './app/stylesheets/**/*.sass'], ['sass']);
   gulp.watch("./app/javascript/*.js", ['jsmin']);
+	gulp.watch("./app/images/**/*.+(jpg|jpeg|png|gif|svg|ico)", ['imagemin']);
 });

@@ -5,7 +5,7 @@ html
     .l-wraper
 			include _header2
 			.l-content
-				.finish-message
+				.m-message
 					.l-container
 						p
 							| お疲れ様でした。
@@ -31,45 +31,43 @@ html
 						.f-btn
 							button.main-btn
 								| Facebookで結果をシェアする								
-				.weather-content
-					.weather-part
-						.wea-title.is-small
-							.l-container
-								| 支援者一覧 (3人)
-						.wea-cotent	
-							.wea-users	
-								.l-container
-									ul.list-users
-										li.each-users
-											.avatar
-												img src="img/avatar.jpg"	
-											.entry
-												span.u-name
-													| 福田 悠
-												p.u-success
-													| 成功: Amazonギフト券(Eメールタイプ)
-												p.u-failure
-													| 失敗: ディナーおごり	
-										li.each-users
-											.avatar
-												img src="img/avatar.jpg"	
-											.entry
-												span.u-name
-													| 中村 麻紀
-												p.u-success
-													| 成功: Amazonギフト券(Eメールタイプ)
-												p.u-failure
-													| 失敗: ディナーおごり	
-										li.each-users
-											.avatar
-												img src="img/avatar.jpg"	
-											.entry
-												span.u-name
-													| Yusaku Matsui
-												p.u-success
-													| 成功: Amazonギフト券(Eメールタイプ)
-												p.u-failure
-													| 失敗: ディナーおごり
+				.content-part.user-content
+					.m-title.is-small
+						.l-container
+							| 支援者一覧 (3人)
+					.content-deatail
+						.l-container
+							ul.list-m-user
+								li.m-user
+									.avatar
+										img src="img/avatar.jpg"	
+									.entry
+										span.u-name
+											| 福田 悠
+										p.u-success
+											| 成功: Amazonギフト券(Eメールタイプ)
+										p.u-failure
+											| 失敗: ディナーおごり	
+								li.m-user
+									.avatar
+										img src="img/avatar.jpg"	
+									.entry
+										span.u-name
+											| 中村 麻紀
+										p.u-success
+											| 成功: Amazonギフト券(Eメールタイプ)
+										p.u-failure
+											| 失敗: ディナーおごり	
+								li.m-user
+									.avatar
+										img src="img/avatar.jpg"	
+									.entry
+										span.u-name
+											| Yusaku Matsui
+										p.u-success
+											| 成功: Amazonギフト券(Eメールタイプ)
+										p.u-failure
+											| 失敗: ディナーおごり
 			include _footer
 					
 	 		

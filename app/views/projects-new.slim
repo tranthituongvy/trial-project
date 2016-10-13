@@ -5,7 +5,7 @@ html
 		.l-wraper
 			include _header2
 			.l-content
-				.l-title
+				.m-title.is-normal
 					.l-container
 						| 新規プロジェクト作成
 				.main-form.new-form
@@ -21,11 +21,13 @@ html
 						.f-row
 							label.f-label
 								| プロジェクト開始日
-							input.f-text type="text"	
+							input#startdate-input.f-text type="text"	
+							#startdate
 						.f-row
 							label.f-label
 								| プロジェクト終了日
-							input.f-text type="text"	
+							input#enddate-input.f-text type="text"
+							#enddate	
 						.f-row
 							label.f-label
 								| 達成の証明方法
