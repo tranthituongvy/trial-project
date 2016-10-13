@@ -508,6 +508,11 @@ table {
   width: 23px;
   height: 23px; }
 
+.fa-checked {
+  background-image: url(../img/icon_checked.png);
+  width: 15px;
+  height: 15px; }
+
 .fa-copy {
   background-image: url(../img/icon_copy.png);
   width: 24px;
@@ -515,6 +520,11 @@ table {
 
 .fa-save {
   background-image: url(../img/icon_save.png);
+  width: 23px;
+  height: 23px; }
+
+.fa-post {
+  background-image: url(../img/icon_post.png);
   width: 23px;
   height: 23px; }
 
@@ -1080,6 +1090,43 @@ table {
   .f-btn.f-row {
     padding-bottom: 35px; }
 
+.f-radio {
+  display: block; }
+  .f-radio input[type="radio"] {
+    display: none; }
+  .f-radio label {
+    border-radius: 3px;
+    display: block;
+    border: 1px solid #28b4aa;
+    height: 40px;
+    color: #303333;
+    position: relative;
+    padding-left: 63px;
+    line-height: 40px;
+    font-size: 13px; }
+    .f-radio label:before {
+      content: '';
+      background: url(../img/icon_check.png) no-repeat;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      margin-top: -8px; }
+    .f-radio label:after {
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: #28b4aa;
+      position: absolute;
+      top: 0;
+      left: 43px; }
+  .f-radio input[type="radio"]:checked + label:before {
+    background: url(../img/icon_checked.png) no-repeat; }
+
+.list-radio li {
+  margin-bottom: 25px; }
+
 .main-btn {
   border-radius: 20px;
   padding: 0 20px;
@@ -1142,51 +1189,58 @@ table {
   .list-m-user .m-user:last-of-type {
     border-bottom: none; }
 
-.m-request .request-title {
-  line-height: 28px; }
-  .m-request .request-title .rt-title {
-    border-radius: 14px;
-    background-color: #28b4aa;
-    height: 28px;
-    display: inline-block;
-    padding: 0 15px;
-    font-size: 14px;
-    color: #fff;
+.m-request {
+  color: #1c8079; }
+  .m-request .request-title {
+    line-height: 28px; }
+    .m-request .request-title .rt-title {
+      border-radius: 14px;
+      background-color: #28b4aa;
+      height: 28px;
+      display: inline-block;
+      padding: 0 15px;
+      font-size: 14px;
+      color: #fff;
+      position: relative;
+      margin-right: 16px; }
+      .m-request .request-title .rt-title:after {
+        content: '';
+        width: 11px;
+        height: 20px;
+        background: url(../img/icon_arrow_fill.png) no-repeat;
+        position: absolute;
+        right: -6px;
+        top: 50%;
+        margin-top: -10px; }
+    .m-request .request-title .rt-info {
+      font-size: 14px; }
+  .m-request .request-content {
+    margin-top: 15px; }
+  .m-request .item-check {
     position: relative;
-    margin-right: 16px; }
-    .m-request .request-title .rt-title:after {
-      content: '';
-      width: 11px;
-      height: 20px;
-      background: url(../img/icon_arrow_fill.png) no-repeat;
+    padding-left: 24px; }
+    .m-request .item-check .fa-checked {
       position: absolute;
-      right: -6px;
       top: 50%;
-      margin-top: -10px; }
-  .m-request .request-title .rt-info {
-    font-size: 14px; }
-
-.m-request .request-content {
-  margin-top: 15px; }
-
-.m-request .item-check {
-  position: relative;
-  padding-left: 24px; }
-  .m-request .item-check .item-icon {
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    border: 1px solid #28b4aa;
-    text-align: center;
-    padding-top: 8px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 12px; }
-  .m-request .item-check .item-txt {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 42px;
-    font-size: 14px; }
+      left: 15px;
+      margin-top: -8px; }
+    .m-request .item-check .item-icon {
+      border-radius: 100%;
+      width: 42px;
+      height: 42px;
+      border: 1px solid #28b4aa;
+      text-align: center;
+      padding-top: 8px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 12px; }
+    .m-request .item-check .item-txt {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 42px;
+      font-size: 14px; }
+  .m-request.has-icon .item-check {
+    padding-left: 44px; }
 
 .list-m-request .m-request {
   padding: 15px 0; }
@@ -1364,3 +1418,11 @@ table {
     .projects-finish .list-status li.failure {
       border-color: #32cdfd;
       color: #32cdfd; }
+
+.supports-new .list-radio {
+  margin-top: 25px; }
+
+.supports-new .list-m-request {
+  margin-top: 10px; }
+  .supports-new .list-m-request .m-request:last-of-type {
+    padding-bottom: 0; }

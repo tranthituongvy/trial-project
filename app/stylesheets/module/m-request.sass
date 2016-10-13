@@ -1,4 +1,7 @@
 .m-request
+	color: $color-background-3
+	
+	
 	.request-title
 		line-height: 28px
 		
@@ -37,6 +40,12 @@
 		position: relative
 		padding-left: 24px
 		
+		.fa-checked
+			position: absolute
+			top: 50%
+			left: 15px
+			margin-top: -8px
+		
 		
 		.item-icon
 			+border-radius(100%)
@@ -57,6 +66,11 @@
 			font-size: 14px
 			
 			
+	&.has-icon
+		.item-check
+			padding-left: 44px		
+			
+			
 .list-m-request
 	.m-request
-		padding: 15px 0			
+		padding: 15px 0		

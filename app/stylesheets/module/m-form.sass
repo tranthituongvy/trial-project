@@ -50,3 +50,55 @@
 	
 	&.f-row
 		padding-bottom: 35px
+		
+		
+.f-radio
+	display: block
+	
+	input[type="radio"]
+		display: none
+	
+	
+	label
+		+border-radius(3px)
+		display: block
+		border: 1px solid $color-background
+		height: 40px
+		color: $color-dark-gray
+		position: relative
+		padding-left: 63px
+		line-height: 40px
+		font-size: 13px
+		
+		
+		&:before
+			content: ''
+			background: url(../img/icon_check.png) no-repeat
+			width: 15px
+			height: 15px
+			position: absolute
+			top: 50%
+			left: 15px	
+			margin-top: -8px
+			
+			
+		&:after
+			content: ''
+			width: 1px
+			height: 100%
+			background-color: $color-background
+			position: absolute
+			top: 0
+			left: 43px	
+		
+		
+	input[type="radio"]:checked + label:before
+		background: url(../img/icon_checked.png) no-repeat
+		
+		
+		
+.list-radio
+	li
+		margin-bottom: 25px		
+			
+					
