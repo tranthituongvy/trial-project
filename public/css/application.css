@@ -493,6 +493,11 @@ table {
   width: 51px;
   height: 51px; }
 
+.fa-rain-big {
+  background-image: url(../img/icon_rain_big.png);
+  width: 99px;
+  height: 99px; }
+
 .fa-facebook {
   background-image: url(../img/icon_facebook.png);
   width: 17px;
@@ -1018,6 +1023,9 @@ table {
   left: 0;
   padding: 0 3px; }
 
+.l-content {
+  min-height: 606px; }
+
 .l-footer {
   background-color: #fff; }
 
@@ -1060,7 +1068,8 @@ table {
   line-height: 28px;
   background-color: #28b4aa;
   padding: 0 20px;
-  margin-bottom: 7px; }
+  margin-bottom: 7px;
+  font-weight: bold; }
 
 .f-textarea {
   border-radius: 3px;
@@ -1135,18 +1144,23 @@ table {
   background: #fff;
   color: #28b4aa;
   font-size: 16px;
-  line-height: 38px; }
+  line-height: 38px;
+  font-weight: bold; }
   .main-btn:focus {
     outline: none; }
   .main-btn .fa {
     vertical-align: top;
     margin: 6px 10px 0 0; }
+  .main-btn.btn-gray {
+    color: #79807f;
+    border-color: #79807f; }
 
 .m-title {
   background-color: #1c8079;
   font-size: 16px;
   padding: 6px 0;
-  color: #fff; }
+  color: #fff;
+  font-weight: bold; }
   .m-title.is-small {
     font-size: 12px;
     line-height: 13px; }
@@ -1192,7 +1206,8 @@ table {
 .m-request {
   color: #1c8079; }
   .m-request .request-title {
-    line-height: 28px; }
+    line-height: 28px;
+    font-weight: bold; }
     .m-request .request-title .rt-title {
       border-radius: 14px;
       background-color: #28b4aa;
@@ -1252,7 +1267,56 @@ table {
   line-height: 30px;
   padding: 18px; }
   .m-message .emphasize {
-    font-size: 22px; }
+    font-size: 22px;
+    font-weight: bold; }
+  .m-message .fa {
+    margin-top: 10px; }
+
+.m-notification {
+  color: #1c8079;
+  text-align: center;
+  padding: 20px 0 30px;
+  font-size: 18px; }
+  .m-notification .noti-title {
+    display: block;
+    margin-bottom: 22px;
+    font-weight: bold; }
+  .m-notification .noti-achieve {
+    margin-bottom: 20px; }
+  .m-notification .main-btn {
+    display: block;
+    width: 100%; }
+  .m-notification .list-status {
+    display: inline-block;
+    margin-bottom: 20px; }
+    .m-notification .list-status:before, .m-notification .list-status:after {
+      content: "";
+      display: table; }
+    .m-notification .list-status:after {
+      clear: both; }
+    .m-notification .list-status li {
+      border-radius: 100%;
+      box-shadow: 0 0 4px #303333;
+      float: left;
+      margin: 0 25px;
+      width: 121px;
+      height: 121px;
+      border-width: 5px;
+      border-style: solid;
+      text-align: center;
+      padding-top: 13px; }
+      .m-notification .list-status li .status-text {
+        display: block;
+        margin-bottom: 3px;
+        font-weight: bold; }
+      .m-notification .list-status li.success {
+        border-color: #ffd538;
+        color: #ffd538; }
+      .m-notification .list-status li.failure {
+        border-color: #32cdfd;
+        color: #32cdfd; }
+  .m-notification .list-m-request {
+    text-align: left; }
 
 .m-weather .l-container {
   background-color: rgba(40, 180, 170, 0.7);
@@ -1288,7 +1352,8 @@ table {
     .m-weather .item-head .item-deg .deg-num {
       font-size: 24px;
       line-height: 26px;
-      margin-top: 3px; }
+      margin-top: 3px;
+      font-weight: bold; }
       .m-weather .item-head .item-deg .deg-num .unit {
         font-size: 16px; }
     .m-weather .item-head .item-deg .deg-status {
@@ -1312,7 +1377,8 @@ table {
   font-size: 16px;
   line-height: 18px;
   max-height: 18px;
-  overflow: hidden; }
+  overflow: hidden;
+  font-weight: bold; }
 
 .m-weather .item-info {
   margin-top: 5px;
@@ -1322,6 +1388,8 @@ table {
     display: table; }
   .m-weather .item-info:after {
     clear: both; }
+  .m-weather .item-info .info {
+    font-weight: bold; }
   .m-weather .item-info .info-left {
     float: left;
     width: 50%; }
@@ -1351,6 +1419,10 @@ table {
   .m-weather.rainny .item-head .item-img {
     margin-top: -25px; }
 
+.m-weather .m-message {
+  background-color: transparent;
+  padding: 0; }
+
 .projects .user-content {
   color: #1c8079; }
   .projects .user-content .list-m-user .m-user {
@@ -1376,49 +1448,6 @@ table {
 .projects-finish .list-m-user {
   margin-bottom: 15px; }
 
-.projects-finish .finish-notification {
-  color: #1c8079;
-  text-align: center;
-  padding: 20px 0 30px;
-  font-size: 18px; }
-  .projects-finish .finish-notification .fn-title {
-    display: block;
-    margin-bottom: 22px; }
-  .projects-finish .finish-notification .fn-achieve {
-    margin-bottom: 20px; }
-  .projects-finish .finish-notification .main-btn {
-    display: block;
-    width: 100%; }
-
-.projects-finish .list-status {
-  display: inline-block;
-  margin-bottom: 20px; }
-  .projects-finish .list-status:before, .projects-finish .list-status:after {
-    content: "";
-    display: table; }
-  .projects-finish .list-status:after {
-    clear: both; }
-  .projects-finish .list-status li {
-    border-radius: 100%;
-    box-shadow: 0 0 4px #303333;
-    float: left;
-    margin: 0 25px;
-    width: 121px;
-    height: 121px;
-    border-width: 5px;
-    border-style: solid;
-    text-align: center;
-    padding-top: 13px; }
-    .projects-finish .list-status li .status-text {
-      display: block;
-      margin-bottom: 3px; }
-    .projects-finish .list-status li.success {
-      border-color: #ffd538;
-      color: #ffd538; }
-    .projects-finish .list-status li.failure {
-      border-color: #32cdfd;
-      color: #32cdfd; }
-
 .supports-new .list-radio {
   margin-top: 25px; }
 
@@ -1429,3 +1458,9 @@ table {
 
 .supports-show .list-m-request {
   margin-bottom: 40px; }
+
+.supports-fail .list-m-request {
+  margin: 20px 0 30px; }
+
+.supports-fail .main-btn {
+  width: 305px; }
