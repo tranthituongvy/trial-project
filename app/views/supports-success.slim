@@ -1,20 +1,24 @@
 doctype html
 html
 	include _head
-	body.supports.supports-fail
+	body.supports.supports-success
 		.l-wraper
 			include _header2
 			.l-content
-				.m-weather.rainny	
+				.m-weather.sunny	
 					.l-container
 						.m-message														
 							p.emphasize
 								| 「FP資格取得プロジェクト」
 							p
 								| が終了しました。
-							i.fa.fa-rain-big		
+							i.fa.fa-sun-big		
 				.m-notification
-					.l-container						
+					.l-container	
+						.noti-achieve
+							p.achieve-title
+								| 達成を証明する: 資格証の写真送付 
+							img src="img/achieve.png"
 						.list-m-request
 							.m-request.has-icon	
 								.request-title
@@ -35,6 +39,8 @@ html
 										| 失敗の罰
 									span.rt-info	
 										| ディナーおごり
+						span.noti-title
+							| 主催者に連絡して <br> 報酬/罰を実行しましょう。				
 						.f-row.f-btn
 							button.main-btn.btn-gray
 								| このプロジェクト通知を消す								

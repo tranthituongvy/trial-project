@@ -17,6 +17,23 @@
 	padding: 0 20px
 	margin-bottom: 7px
 	font-weight: bold
+	font-size: 14px
+	
+	
+	&.has-arrow
+		position: relative
+		margin-bottom: 16px
+		
+		
+		&:after
+			content: ''
+			position: absolute
+			bottom: -6px
+			left: 50%
+			margin-left: -30px
+			background: url(../img/icon_arrow_down.png) no-repeat
+			width: 60px
+			height: 6px
 	
 	
 .f-textarea
@@ -26,8 +43,25 @@
 	display: block
 	width: 100%
 	padding: 10px 12px
-	color: $color-dark-gray
+	color: $color-background-3
 	height: 100px
+	font-weight: bold
+	
+	
+	&::-webkit-input-placeholder
+		color: #b6bfbf
+		
+		
+	&::-moz-placeholder
+		color: #b6bfbf
+		
+		
+	&:-ms-input-placeholder
+		color: #b6bfbf
+		
+		
+	&:-moz-placeholder
+		color: #b6bfbf
 	
 	
 .f-text
@@ -38,7 +72,23 @@
 	width: 100%
 	height: 40px
 	padding: 0 12px
-	color: $color-dark-gray	
+	color: $color-background-3	
+	
+	
+	&::-webkit-input-placeholder
+		color: #b6bfbf
+		
+		
+	&::-moz-placeholder
+		color: #b6bfbf
+		
+		
+	&:-ms-input-placeholder
+		color: #b6bfbf
+		
+		
+	&:-moz-placeholder
+		color: #b6bfbf
 	
 	
 .f-row
@@ -101,5 +151,25 @@
 .list-radio
 	li
 		margin-bottom: 25px		
+		
+		
+.input-wrap
+	position: relative
+	
+	
+	.f-text
+		padding-left: 48px
+		
+		
+	.input-icon
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		width: 36px
+		height: 100%
+		text-align: center
+		border-right: 1px solid $color-twitter		
+		padding-top: 10px	
 			
 					

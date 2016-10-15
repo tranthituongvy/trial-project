@@ -8,7 +8,7 @@
     <script src="js/bootstrap-datepicker.min.js" type="text/javascript"></script>
     <script src="js/_common.min.js" type="text/javascript"></script>
   </head>
-  <body class="supports supports-fail">
+  <body class="conditions conditions-new">
     <div class="l-wraper">
       <div class="l-header">
         <div class="l-container">
@@ -16,40 +16,38 @@
         </div>
       </div>
       <div class="l-content">
-        <div class="m-weather rainny">
+        <div class="m-message">
+          <p class="emphasize">
+            FP資格取得プロジェクト
+          </p>
+        </div>
+        <div class="m-title is-normal">
           <div class="l-container">
-            <div class="m-message">
-              <p class="emphasize">
-                「FP資格取得プロジェクト」
-              </p>
-              <p>
-                が終了しました。
-              </p>
-              <i class="fa fa-rain-big"></i>
-            </div>
+            依頼パターン1
           </div>
         </div>
-        <div class="m-notification">
+        <div class="main-form new-form">
           <div class="l-container">
-            <div class="list-m-request">
-              <div class="m-request has-icon">
-                <div class="request-title">
-                  <span class="rt-title">成功報酬</span><span class="rt-info">Amazonで購入</span>
+            <div class="f-row">
+              <label class="f-label has-arrow">成功報酬</label><textarea class="f-textarea" cols="" placeholder="テキストを入力" rows=""></textarea>
+            </div>
+            <div class="f-row">
+              <div class="m-request">
+                <div class="input-wrap">
+                  <span class="input-icon"><i class="fa fa-amazon"></i></span><input class="f-text" placeholder="Amazonで商品選択" type="text" />
                 </div>
                 <div class="request-content">
                   <div class="item-check">
-                    <i class="fa fa-checked"></i><span class="item-icon"><i class="fa fa-amazon"></i></span><span class="item-txt">Amazonギフト券(Eメールタイプ)	</span>
+                    <span class="item-icon"><i class="fa fa-amazon"></i></span><span class="item-txt">Amazonギフト券(Eメールタイプ)		</span>
                   </div>
                 </div>
               </div>
-              <div class="m-request">
-                <div class="request-title">
-                  <span class="rt-title">失敗の罰</span><span class="rt-info">ディナーおごり</span>
-                </div>
-              </div>
+            </div>
+            <div class="f-row">
+              <label class="f-label has-arrow">失敗の罰</label><textarea class="f-textarea" cols="" rows="">ディナーおごり</textarea>
             </div>
             <div class="f-row f-btn">
-              <button class="main-btn btn-gray">このプロジェクト通知を消す								</button>
+              <button class="main-btn"><i class="fa fa-save"></i>保存する					</button>
             </div>
           </div>
         </div>

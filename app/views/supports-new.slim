@@ -29,48 +29,49 @@ html
 									span.unit
 										| 日
 								span.deg-status.deg-72	
-				.content-part
-					.l-containter
-						ul.list-radio
-							li
-								span.f-radio
-									input type="radio" name="option" id="option1"
-									label for="option1"
-										| 支援する		
-								.list-m-request
-									.m-request.has-icon	
-										.request-title
-											span.rt-title
-												| 成功報酬
-											span.rt-info	
-												| Amazonで購入
-										.request-content
-											.item-check
-												i.fa.fa-checked
-												span.item-icon
-													i.fa.fa-amazon
-												span.item-txt
-													| Amazonギフト券(Eメールタイプ)	
-									.m-request	
-										.request-title
-											span.rt-title
-												| 失敗の罰
-											span.rt-info	
-												| ディナーおごり			
-							li
-								span.f-radio
-									input type="radio" name="option" id="option2"
-									label for="option2"
-										| 支援しない	
-							li
-								span.f-radio
-									input type="radio" name="option" id="option3"
-									label for="option3"
-										| 様子を見る		
-				.f-row.f-btn
-					button.main-btn
-						i.fa.fa-post 
-						| 保存する					
+				.m-form.new-form	
+					.l-containter			
+						.m-choose
+							ul.list-radio
+								li
+									span.f-radio
+										input type="radio" name="option" id="option1"
+										label for="option1"
+											| 支援する		
+									.list-m-request
+										.m-request.has-icon	
+											.request-title
+												span.rt-title
+													| 成功報酬
+												span.rt-info	
+													| Amazonで購入
+											.request-content
+												.item-check
+													i.fa.fa-checked
+													span.item-icon
+														i.fa.fa-amazon
+													span.item-txt
+														| Amazonギフト券(Eメールタイプ)	
+										.m-request	
+											.request-title
+												span.rt-title
+													| 失敗の罰
+												span.rt-info	
+													| ディナーおごり			
+								li
+									span.f-radio
+										input type="radio" name="option" id="option2"
+										label for="option2"
+											| 支援しない	
+								li
+									span.f-radio
+										input type="radio" name="option" id="option3"
+										label for="option3"
+											| 様子を見る		
+						.f-row.f-btn
+							button.main-btn 
+								i.fa.fa-post 
+								| 保存する					
 			include _footer
                 
 					
