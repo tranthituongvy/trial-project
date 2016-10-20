@@ -8,34 +8,33 @@ html
 				.m-title.is-normal
 					.l-container
 						| 新規プロジェクト作成
-				.main-form.new-form
+				.m-form.new-form
 					.l-container
-						.f-row
-							label.f-label
-								| プロジェクト名
-							input.f-text type="text"
-						.f-row
-							label.f-label
-								| プロジェクトの詳細
-							textarea.f-textarea rows="" cols=""	
-						.f-row
-							label.f-label
-								| プロジェクト開始日
-							input#startdate-input.f-text type="text"	
-							#startdate
-						.f-row
-							label.f-label
-								| プロジェクト終了日
-							input#enddate-input.f-text type="text"
-							#enddate	
-						.f-row
-							label.f-label
-								| 達成の証明方法
-							input.f-text type="text"	
-						.f-row.f-btn
-							button.main-btn
-								i.fa.fa-save
-								| 保存する					
+						form
+							.f-row
+								label.f-label
+									| プロジェクト名
+								input.f-text type="text"
+							.f-row
+								label.f-label
+									| プロジェクトの詳細
+								textarea.f-textarea rows="" cols=""	
+							.f-row
+								label.f-label
+									| プロジェクト開始日
+								input.f-text type="date" value="mm/dd/yy"	
+							.f-row
+								label.f-label
+									| プロジェクト終了日
+								input.f-text type="date" value="mm/dd/yy"
+							.f-row
+								label.f-label
+									| 達成の証明方法
+								input.f-text type="text"	
+							.f-row.f-btn
+								a.m-btn href="conditions-new.html"
+									i.fa.fa-save
+									| 保存する					
 			include _footer
                 
 					

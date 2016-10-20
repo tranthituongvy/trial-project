@@ -18,18 +18,20 @@ html
 						span.noti-title
 							| プロジェクトは成功しましたか? <br> 支援者に結果を知らせましょう。
 						ul.list-status
-							li.success
-								span.status-text
-									| 成功!!
-								i.fa.fa-sun	
-							li.failure
-								span.status-text
-									| 失敗…
-								i.fa.fa-rain	
+							li
+								a.status.success href="./projects-index.html"
+									span.status-text
+										| 成功!!
+									i.fa.fa-sun	
+							li
+								.status.failure
+									span.status-text
+										| 失敗…
+									i.fa.fa-rain	
 						p.noti-achieve
 							| 達成を証明する: 資格証の写真送付
 						.f-btn
-							button.main-btn
+							a.m-btn href="fb-messenger://user/ryota.murakami.7"
 								| Facebookで結果をシェアする								
 				.content-part.user-content
 					.m-title.is-small
@@ -40,30 +42,36 @@ html
 							ul.list-m-user
 								li.m-user
 									.avatar
-										img src="img/avatar.jpg"	
+										a href="fb-messenger://user/ryota.murakami.7"
+											img src="img/avatar.jpg"	
 									.entry
 										span.u-name
-											| 福田 悠
+											a href="fb-messenger://user/ryota.murakami.7"
+												| 福田 悠
 										p.u-success
 											| 成功: Amazonギフト券(Eメールタイプ)
 										p.u-failure
 											| 失敗: ディナーおごり	
 								li.m-user
 									.avatar
-										img src="img/avatar.jpg"	
+										a href="fb-messenger://user/ryota.murakami.7"
+											img src="img/avatar.jpg"	
 									.entry
 										span.u-name
-											| 中村 麻紀
+											a href="fb-messenger://user/ryota.murakami.7"
+												| 中村 麻紀
 										p.u-success
 											| 成功: Amazonギフト券(Eメールタイプ)
 										p.u-failure
 											| 失敗: ディナーおごり	
 								li.m-user
 									.avatar
-										img src="img/avatar.jpg"	
+										a href="fb-messenger://user/ryota.murakami.7"
+											img src="img/avatar.jpg"	
 									.entry
 										span.u-name
-											| Yusaku Matsui
+											a href="fb-messenger://user/ryota.murakami.7"
+												| Yusaku Matsui
 										p.u-success
 											| 成功: Amazonギフト券(Eメールタイプ)
 										p.u-failure

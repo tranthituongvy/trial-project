@@ -11,33 +11,34 @@ html
 				.m-title.is-normal
 					.l-container
 						| 依頼パターン1
-				.main-form.new-form
+				.m-form.new-form
 					.l-container
-						.f-row
-							label.f-label.has-arrow
-								| 成功報酬
-							textarea.f-textarea rows="" cols="" placeholder="テキストを入力"
-						.f-row		
-							.m-request	
-								.input-wrap
-									span.input-icon
-										i.fa.fa-amazon
-									input.f-text type="text" placeholder="Amazonで商品選択"	
-								.request-content
-									.item-check
-										span.item-icon
+						form
+							.f-row
+								label.f-label.has-arrow
+									| 成功報酬
+								textarea.f-textarea rows="" cols="" placeholder="テキストを入力"
+							.f-row		
+								.m-request	
+									.input-wrap
+										span.input-icon
 											i.fa.fa-amazon
-										span.item-txt
-											| Amazonギフト券(Eメールタイプ)		
-						.f-row
-							label.f-label.has-arrow
-								| 失敗の罰
-							textarea.f-textarea rows="" cols=""	
-								| ディナーおごり
-						.f-row.f-btn
-							button.main-btn
-								i.fa.fa-save
-								| 保存する					
+										input.f-text type="text" placeholder="Amazonで商品選択"	
+									.request-content
+										.item-check
+											span.item-icon
+												i.fa.fa-amazon
+											span.item-txt
+												| Amazonギフト券(Eメールタイプ)		
+							.f-row
+								label.f-label.has-arrow
+									| 失敗の罰
+								textarea.f-textarea rows="" cols=""	
+									| ディナーおごり
+							.f-row.f-btn
+								a.m-btn href="projects-show.html"
+									i.fa.fa-save
+									| 保存する					
 			include _footer
                 
 					

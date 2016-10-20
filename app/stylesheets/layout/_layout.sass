@@ -1,6 +1,8 @@
 .l-wraper
-  max-width: 414px
-  margin: 0 auto
+	max-width: 414px
+	margin: 0 auto
+	padding: 50px 0 60px
+	background-color: $color-text
   
   
 .l-container
@@ -8,10 +10,14 @@
 
   
 .l-header
-  background-color: $color-text
-  text-align: center  
-  padding-top: 11px
-  position: relative
+	background-color: $color-text
+	text-align: center
+	padding-top: 11px
+	position: fixed
+	top: 0
+	width: 100%
+	max-width: 414px
+	z-index: 5
 	
 	
 .l-header
@@ -50,35 +56,30 @@
 		
 .l-footer
 	background-color: $color-text
+	position: fixed
+	bottom: 0
+	width: 100%
+	max-width: 414px
+	z-index: 5
 	
 	
 .l-share	
 	+box-shadow(0,-1px,4px,rgba($color-dark-gray,0.5))
-	height: 68px	
+	height: 60px	
 	position: relative
+	border-top: 1px solid #bbb
 	
 	
 	.share-facebook,
-	.share-twitter
-		+border-radius(100%)
-		height: 88px
-		width: 88px
-		border-width: 4px
-		border-style: solid
-		display: block
-		text-align: center
-		padding-top: 25px
+	.share-add
 		position: absolute
-		top: -10px
-		background-color: $color-text
+		top: -21px
 		
 		
 	.share-facebook
-		border-color: $color-facebook
-		left: -36px
+		left: -18px
 		
 		
-	.share-twitter
-		border-color: $color-twitter
-		right: -36px
+	.share-add
+		right: -18px
 		

@@ -15,7 +15,8 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #444; }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -378,11 +379,11 @@ html, body {
   box-sizing: border-box; }
 
 a {
-  color: #00B6BF;
+  color: #1c8079;
   text-decoration: none;
   outline: none; }
   a:hover {
-    color: #28b4aa; }
+    color: #1c8079; }
 
 p {
   margin: 0px; }
@@ -507,13 +508,13 @@ table {
 
 .fa-facebook {
   background-image: url(../img/icon_facebook.png);
-  width: 17px;
-  height: 30px; }
+  width: 81px;
+  height: 81px; }
 
-.fa-twitter {
-  background-image: url(../img/icon_twitter.png);
-  width: 30px;
-  height: 30px; }
+.fa-add {
+  background-image: url(../img/icon_add.png);
+  width: 81px;
+  height: 81px; }
 
 .fa-amazon {
   background-image: url(../img/icon_amazon.png);
@@ -994,7 +995,9 @@ table {
   margin-right: -5px; }
 .l-wraper {
   max-width: 414px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 50px 0 60px;
+  background-color: #fff; }
 
 .l-container {
   padding: 0 18px; }
@@ -1003,7 +1006,11 @@ table {
   background-color: #fff;
   text-align: center;
   padding-top: 11px;
-  position: relative; }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 414px;
+  z-index: 5; }
 
 .l-header .l-back {
   position: absolute;
@@ -1034,33 +1041,28 @@ table {
   min-height: 606px; }
 
 .l-footer {
-  background-color: #fff; }
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 414px;
+  z-index: 5; }
 
 .l-share {
   box-shadow: 0 -1px 4px rgba(48, 51, 51, 0.5);
-  height: 68px;
-  position: relative; }
+  height: 60px;
+  position: relative;
+  border-top: 1px solid #bbb; }
   .l-share .share-facebook,
-  .l-share .share-twitter {
-    border-radius: 100%;
-    height: 88px;
-    width: 88px;
-    border-width: 4px;
-    border-style: solid;
-    display: block;
-    text-align: center;
-    padding-top: 25px;
+  .l-share .share-add {
     position: absolute;
-    top: -10px;
-    background-color: #fff; }
+    top: -21px; }
   .l-share .share-facebook {
-    border-color: #3b5998;
-    left: -36px; }
-  .l-share .share-twitter {
-    border-color: #28b4aa;
-    right: -36px; }
+    left: -18px; }
+  .l-share .share-add {
+    right: -18px; }
 
-.main-form {
+.m-form {
   margin-top: 15px; }
 
 .f-note {
@@ -1188,7 +1190,7 @@ table {
     border-right: 1px solid #28b4aa;
     padding-top: 10px; }
 
-.main-btn {
+.m-btn {
   border-radius: 20px;
   padding: 0 20px;
   height: 40px;
@@ -1197,13 +1199,16 @@ table {
   color: #28b4aa;
   font-size: 16px;
   line-height: 38px;
-  font-weight: bold; }
-  .main-btn:focus {
+  font-weight: bold;
+  display: inline-block; }
+  .m-btn:hover {
+    color: #28b4aa; }
+  .m-btn:focus {
     outline: none; }
-  .main-btn .fa {
+  .m-btn .fa {
     vertical-align: top;
     margin: 6px 10px 0 0; }
-  .main-btn.btn-gray {
+  .m-btn.btn-gray {
     color: #79807f;
     border-color: #79807f; }
 
@@ -1335,7 +1340,7 @@ table {
     font-weight: bold; }
   .m-notification .noti-achieve {
     margin-bottom: 20px; }
-  .m-notification .main-btn {
+  .m-notification .m-btn {
     display: block;
     width: 100%; }
   .m-notification .list-status {
@@ -1347,28 +1352,34 @@ table {
     .m-notification .list-status:after {
       clear: both; }
     .m-notification .list-status li {
-      border-radius: 100%;
-      box-shadow: 0 0 4px #303333;
       float: left;
-      margin: 0 25px;
-      width: 121px;
-      height: 121px;
-      border-width: 5px;
-      border-style: solid;
-      text-align: center;
-      padding-top: 13px; }
+      margin: 0 25px; }
+      .m-notification .list-status li .status {
+        display: block;
+        border-radius: 100%;
+        box-shadow: 0 0 4px #303333;
+        width: 121px;
+        height: 121px;
+        border-width: 5px;
+        border-style: solid;
+        text-align: center;
+        padding-top: 13px;
+        background-color: #fff; }
+        .m-notification .list-status li .status.success {
+          border-color: #ffd538;
+          color: #ffd538; }
+        .m-notification .list-status li .status.failure {
+          border-color: #32cdfd;
+          color: #32cdfd; }
       .m-notification .list-status li .status-text {
         display: block;
         margin-bottom: 3px;
         font-weight: bold; }
-      .m-notification .list-status li.success {
-        border-color: #ffd538;
-        color: #ffd538; }
-      .m-notification .list-status li.failure {
-        border-color: #32cdfd;
-        color: #32cdfd; }
   .m-notification .list-m-request {
     text-align: left; }
+
+.m-weather a {
+  color: #fff; }
 
 .m-weather .l-container {
   background-color: rgba(40, 180, 170, 0.7);
@@ -1517,7 +1528,7 @@ table {
     display: block;
     margin: 0 auto; }
 
-.supports-fail .main-btn {
+.supports-fail .m-btn {
   width: 305px; }
 
 .supports-success .m-notification .noti-achieve {
