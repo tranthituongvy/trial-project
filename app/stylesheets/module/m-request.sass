@@ -69,7 +69,23 @@
 			
 	&.has-icon
 		.item-check
-			padding-left: 44px		
+			padding-left: 44px	
+			
+			
+			&:before
+				+border-radius(50%)
+				content: "\2022"
+				font-size: 36px
+				color: #28b4aa
+				text-align: center
+				line-height: 13px;				
+				width: 13px;
+				height: 13px;
+				position: absolute;
+				top: 50%;
+				left: 15px;
+				margin-top: -8px;
+				border: 1px solid #28b4aa;
 			
 			
 .list-m-request

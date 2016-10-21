@@ -521,11 +521,6 @@ table {
   width: 23px;
   height: 23px; }
 
-.fa-checked {
-  background-image: url(../img/icon_checked.png);
-  width: 15px;
-  height: 15px; }
-
 .fa-copy {
   background-image: url(../img/icon_copy.png);
   width: 24px;
@@ -997,7 +992,8 @@ table {
   max-width: 414px;
   margin: 0 auto;
   padding: 50px 0 60px;
-  background-color: #fff; }
+  background-color: #fff;
+  min-height: 100%; }
 
 .l-container {
   padding: 0 18px; }
@@ -1153,14 +1149,15 @@ table {
     line-height: 40px;
     font-size: 13px; }
     .f-radio label:before {
+      border-radius: 50%;
       content: '';
-      background: url(../img/icon_check.png) no-repeat;
-      width: 15px;
-      height: 15px;
+      width: 13px;
+      height: 13px;
       position: absolute;
       top: 50%;
       left: 15px;
-      margin-top: -8px; }
+      margin-top: -8px;
+      border: 1px solid #28b4aa; }
     .f-radio label:after {
       content: '';
       width: 1px;
@@ -1170,7 +1167,11 @@ table {
       top: 0;
       left: 43px; }
   .f-radio input[type="radio"]:checked + label:before {
-    background: url(../img/icon_checked.png) no-repeat; }
+    content: "\2022";
+    font-size: 36px;
+    color: #28b4aa;
+    text-align: center;
+    line-height: 13px; }
 
 .list-radio li {
   margin-bottom: 25px; }
@@ -1313,6 +1314,20 @@ table {
       font-size: 14px; }
   .m-request.has-icon .item-check {
     padding-left: 44px; }
+    .m-request.has-icon .item-check:before {
+      border-radius: 50%;
+      content: "\2022";
+      font-size: 36px;
+      color: #28b4aa;
+      text-align: center;
+      line-height: 13px;
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      margin-top: -8px;
+      border: 1px solid #28b4aa; }
 
 .list-m-request .m-request {
   padding: 15px 0; }
